@@ -17,5 +17,4 @@
     console.log(`Good Afternoon ${name}`);
 })("mateen");
 
-let num=  4 ?? null
-console.log(num)
+
