@@ -30,7 +30,7 @@ const shopingCart=[{
     itemsName:'Datascience Course',
     itemsPrice:2000
 },
-{
+{ 
     itemsName:'Youtube course',
     itemsPrice:0
 },
