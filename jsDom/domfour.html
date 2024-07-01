@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - 4</title>
+</head>
+<body style="background-color :black ; color:white">
+    <ul class="list">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addText(language){ //greating a function  
+    const li = document.createElement('li'); //creating a element
+    li.innerHTML=`${language}`   // adding the paramater to li inner text
+    document.querySelector('.list').appendChild(li) //appending the child li to parent list
+    
+
+    }
+    addText('Python')
+    addText('java')
+
+    //optimized way 
+    function optimizedMethod(language){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(language))
+        document.querySelector('.list').appendChild(li)
+
+    }
+    optimizedMethod('C')
+
+    //edit
+    const ed=document.querySelector("li:nth-child(2)")
+    console.log(ed);
+    const newEd=document.createElement('li')
+    newEd.textContent='c#'
+    ed.replaceWith(newEd)
+
+    //another edit
+    const edit=document.querySelector("li:first-child")
+    console.log(edit);
+    edit.outerHTML="<li> python </li>"
+
+    //delect
+    const lastLan=document.querySelector("li:last-child")
+    console.log(lastLan)
+    lastLan.remove()
+
+    
+</script>
+</html>
