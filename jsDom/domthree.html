@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM New element</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function elementCreation()
+    {const div=document.createElement('div')
+    console.log(div)
+    div.className="main"
+    div.id="main"
+    div.style.backgroundColor="green"
+    div.style.padding='20px'
+    div.color='black'
+    const addText=document.createTextNode("First Step")
+    div.append(addText)
+    document.body.append(div);
+}
+// elementCreation();
+// elementCreation();
+for (let index = 0; index < 4; index++) {
+    elementCreation();
+    
+}
+
+</script>
+</html>
